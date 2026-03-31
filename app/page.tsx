@@ -47,7 +47,7 @@ export default function Home() {
             Turn Your Retirement Savings Into a Predictable, Tax-Advantaged Cash Flow Engine.
           </p>
           <p className="reveal reveal-delay-3" style={{ maxWidth: '600px', fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '40px' }}>
-            You built a massive nest egg, expecting to finally stop worrying. But as retirement approaches, a sickening feeling creeps in: <strong>You don&apos;t actually own all that money.</strong> You have a joint account with the IRS.
+            You built a massive nest egg, expecting to finally stop worrying. But as retirement approaches, a sickening feeling creeps in: <strong>You don't actually own all that money.</strong> You have a joint account with the IRS.
           </p>
           <div className="reveal reveal-delay-3">
             <a href="#schedule" className="btn-primary">Schedule Your Strategy Call</a>
