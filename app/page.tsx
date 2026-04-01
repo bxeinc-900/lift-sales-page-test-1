@@ -23,6 +23,23 @@ export default function Home() {
           </p>
         </header>
 
+        {/* --- VIDEO PLAYER --- */}
+        <div style={{ marginBottom: '60px', borderRadius: '24px', overflow: 'hidden', border: '1px solid var(--glass-border)', boxShadow: '0 20px 50px rgba(0,0,0,0.5)', background: 'var(--glass-bg)', padding: '12px' }}>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+            <iframe
+              src="https://fast.wistia.net/embed/iframe/mc6ae7h2uc?videoFoam=true"
+              title="LIFT Method Explanation Video"
+              allow="autoplay; fullscreen"
+              allowTransparency={true}
+              frameBorder="0"
+              scrolling="no"
+              className="wistia_embed"
+              name="wistia_embed"
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '12px' }}
+            ></iframe>
+          </div>
+        </div>
+
         {/* --- 2. OPENING HOOK --- */}
         <section className="letter-body" style={{ fontSize: '1.25rem', lineHeight: 1.7, color: '#d0d0d0' }}>
           <p style={{ marginBottom: '25px' }}>You’ve worked hard. You’ve saved diligently. You’ve done exactly what the financial system told you to do.</p>
