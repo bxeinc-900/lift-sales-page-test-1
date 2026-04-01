@@ -170,11 +170,12 @@ export default function Home() {
                 style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '800px' }} 
                 scrolling="no" 
                 id="LwAMMZIaCleIBD0dAVLC_1775061669354"
+                height="800"
               ></iframe>
               <Script 
                 src="https://links.wealthvids.com/js/form_embed.js" 
                 type="text/javascript" 
-                strategy="lazyOnload"
+                strategy="afterInteractive"
               />
             </div>
             
