@@ -1,0 +1,16 @@
+{
+  "name": "The LIFT Method",
+  "short_name": "LIFT",
+  "description": "Secure Retirement Wealth Strategy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0b10",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}

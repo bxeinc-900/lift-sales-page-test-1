@@ -4,11 +4,32 @@ import Image from "next/image";
 import Script from "next/script";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "The LIFT Method",
+    "description": "How smart money uses Indexed Universal Life to grow, protect, and keep their wealth with tax-advantaged income and 0% market floors.",
+    "url": "https://theliftmethod.com",
+    "image": "https://theliftmethod.com/images/og-image.png",
+    "areaServed": "US",
+    "serviceType": "Retirement Planning",
+  };
+
   return (
     <main style={{ backgroundColor: '#0a0b10', color: '#f0f0f0', minHeight: '100vh', paddingBottom: '100px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Background Hero Overlay */}
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: 0, opacity: 0.15, pointerEvents: 'none' }}>
-        <Image src="/images/hero.png" alt="background" fill style={{ objectFit: 'cover' }} />
+        <Image 
+          src="/images/hero.png" 
+          alt="Abstract financial wealth growth visualization" 
+          fill 
+          style={{ objectFit: 'cover' }} 
+          priority
+        />
       </div>
 
       <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '850px', transform: 'translateY(60px)' }}>
@@ -61,7 +82,7 @@ export default function Home() {
           <p style={{ marginBottom: '25px' }}>But here is the brutal truth they left out: <strong style={{ color: '#ff4d4d' }}>You don&apos;t actually own all that money. You have a joint account with the IRS.</strong></p>
           
           <div style={{ position: 'relative', height: '400px', margin: '40px 0', borderRadius: '20px', overflow: 'hidden', border: '1px solid var(--glass-border)' }}>
-            <Image src="/images/tax-trap.png" alt="Tax Trap" fill style={{ objectFit: 'cover' }} />
+            <Image src="/images/tax-trap.png" alt="Graph showing the tax torpedo draining retirement savings" fill style={{ objectFit: 'cover' }} />
           </div>
 
           <p style={{ marginBottom: '25px' }}>And the IRS gets to decide how much they take. With $37 trillion in national debt, do you honestly believe tax rates are going down? When you retire, your biggest deductions vanish. That is when the <strong>&quot;tax torpedo&quot;</strong> hits, draining the wealth you spent a lifetime building.</p>
@@ -124,7 +145,7 @@ export default function Home() {
           </div>
           
           <div style={{ position: 'relative', height: '400px', margin: '40px 0', borderRadius: '20px', overflow: 'hidden', border: '1px solid var(--glass-border)' }}>
-            <Image src="/images/double-duty.png" alt="Double Duty Dollars" fill style={{ objectFit: 'cover' }} />
+            <Image src="/images/double-duty.png" alt="Visualization of money working twice through policy loans" fill style={{ objectFit: 'cover' }} />
           </div>
 
           {/* --- 7. PROOF & CREDIBILITY --- */}
@@ -182,6 +203,28 @@ export default function Home() {
             <p style={{ marginTop: '40px', fontSize: '2rem', color: '#fff', fontFamily: 'cursive' }}>
                The great deception ends the moment you take action.
             </p>
+          </section>
+
+          <section id="faq" style={{ padding: '80px 0' }}>
+            <h2 className="gold-gradient" style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: '50px' }}>Frequently Asked Questions</h2>
+            <div className="grid-2" style={{ gap: '30px' }}>
+              <div className="glass" style={{ padding: '30px' }}>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '15px', fontSize: '1.4rem' }}>What exactly is an IUL?</h3>
+                <p style={{ color: '#d0d0d0', fontSize: '1.1rem' }}>Indexed Universal Life is a form of permanent life insurance that allows you to link your cash value growth to a market index (like the S&P 500) while providing a contractual 0% floor to protect against market losses.</p>
+              </div>
+              <div className="glass" style={{ padding: '30px' }}>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '15px', fontSize: '1.4rem' }}>Is the LIFT Method for everyone?</h3>
+                <p style={{ color: '#d0d0d0', fontSize: '1.1rem' }}>LIFT is specifically designed for high-income earners and those with significant retirement assets who are concerned about future tax rates and market volatility.</p>
+              </div>
+              <div className="glass" style={{ padding: '30px' }}>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '15px', fontSize: '1.4rem' }}>How is this different from a 401(k)?</h3>
+                <p style={{ color: '#d0d0d0', fontSize: '1.1rem' }}>Unlike a 401(k), the LIFT Method provides tax-advantaged access to capital, protection from market crashes, and does not have the mandatory distribution rules (RMDs) that can trigger massive tax bills later in life.</p>
+              </div>
+              <div className="glass" style={{ padding: '30px' }}>
+                <h3 style={{ color: 'var(--accent-gold)', marginBottom: '15px', fontSize: '1.4rem' }}>Can I access my money?</h3>
+                <p style={{ color: '#d0d0d0', fontSize: '1.1rem' }}>Yes. One of the primary benefits of the LIFT Method is liquidity. You can access your cash value via policy loans at any time, for any reason, often without triggering a taxable event.</p>
+              </div>
+            </div>
           </section>
 
         </section>
