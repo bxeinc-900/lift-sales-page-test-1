@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -160,12 +161,20 @@ export default function Home() {
               ⚠️ Time is not on your side. The 2017 tax cuts expire in 2026. You cannot afford to wait until the tax torpedo hits.
             </div>
 
-            {/* --- 11. FORM/CTA --- */}
-            <form style={{ display: 'grid', gap: '15px', maxWidth: '500px', margin: '0 auto' }} onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Full Name" style={{ padding: '15px', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: '#fff' }} />
-              <input type="email" placeholder="Work Email" style={{ padding: '15px', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: '#fff' }} />
-              <button className="btn-primary" style={{ width: '100%' }}>Schedule My Strategy Call Today</button>
-            </form>
+            {/* --- 11. CALENDAR BOOKING --- */}
+            <div style={{ maxWidth: '800px', margin: '0 auto', minHeight: '600px' }}>
+              <iframe 
+                src="https://links.wealthvids.com/widget/booking/LwAMMZIaCleIBD0dAVLC" 
+                style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px' }} 
+                scrolling="no" 
+                id="LwAMMZIaCleIBD0dAVLC_1775061669354"
+              ></iframe>
+              <Script 
+                src="https://links.wealthvids.com/js/form_embed.js" 
+                type="text/javascript" 
+                strategy="lazyOnload"
+              />
+            </div>
             
             <p style={{ marginTop: '40px', fontSize: '2rem', color: '#fff', fontFamily: 'cursive' }}>
                The great deception ends the moment you take action.
