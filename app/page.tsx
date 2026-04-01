@@ -16,11 +16,13 @@ export default function Home() {
         {/* --- 1. HEADLINE --- */}
         <header style={{ textAlign: 'center', marginBottom: '80px' }}>
           <div className="badge">PRIVATE BRIEFING</div>
-          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.8rem)', lineHeight: 1.1, marginBottom: '30px' }} className="gold-gradient">
-            How Smart Money Uses Indexed Universal Life Differently
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1, marginBottom: '30px' }} className="gold-gradient">
+            Discover What the “Great Deception” Means for Your Retirement...<br />
+            Before Time, Taxes, or Markets Decide for You
           </h1>
-          <p style={{ fontSize: '1.5rem', color: 'var(--accent-gold)', fontWeight: 500 }}>
-            (To Grow, Protect, and Keep Their Wealth)
+          <p style={{ fontSize: '1.5rem', color: '#d0d0d0', fontWeight: 400, maxWidth: '800px', margin: '0 auto' }}>
+            Learn why the system was never built to protect your retirement, income, or legacy.<br />
+            <span style={{ color: 'var(--accent-gold)', fontWeight: 600, display: 'block', marginTop: '15px' }}>Watch This Short Video Before It&apos;s Taken Down.</span>
           </p>
         </header>
 
@@ -165,7 +167,7 @@ export default function Home() {
             <div style={{ maxWidth: '800px', margin: '0 auto', minHeight: '600px' }}>
               <iframe 
                 src="https://links.wealthvids.com/widget/booking/LwAMMZIaCleIBD0dAVLC" 
-                style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px' }} 
+                style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '800px' }} 
                 scrolling="no" 
                 id="LwAMMZIaCleIBD0dAVLC_1775061669354"
               ></iframe>
