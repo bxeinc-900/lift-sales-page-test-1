@@ -8,7 +8,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "The LIFT Method",
-    "description": "How smart money uses Indexed Universal Life to grow, protect, and keep their wealth with tax-advantaged income and 0% market floors.",
+    "description": "How the LIFT strategy utilizes Indexed Universal Life to help grow, protect, and keep wealth with tax-advantaged income and contractual 0% market floors.",
     "url": "https://theliftmethod.com",
     "image": "https://theliftmethod.com/images/og-image.png",
     "areaServed": "US",
@@ -62,6 +62,9 @@ export default function Home() {
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '12px' }}
             ></iframe>
           </div>
+        </div>
+        <div style={{ textAlign: 'center', margin: '40px 0 80px 0' }}>
+          <a href="#schedule" className="btn-primary">Schedule Your 20-Minute Strategy Call</a>
         </div>
 
         {/* --- 2. OPENING HOOK --- */}
@@ -117,7 +120,7 @@ export default function Home() {
                 <span style={{ fontSize: '2rem' }}>🛡️</span>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--accent-gold)', fontSize: '1.3rem' }}>The 0% Floor</strong>
-                  Your cash value is linked to a market index, but not IN the market. If the market drops 20%, your return is simply zero. <strong style={{ color: '#fff' }}>You never lose a dime of principal to a crash.</strong>
+                  Your cash value is linked to a market index, but not IN the market. If the market drops 20%, your return is simply zero. <strong style={{ color: '#fff' }}>This is designed to protect your principal from market volatility during a crash.</strong>
                 </div>
               </li>
               <li style={{ marginBottom: '35px', display: 'flex', gap: '20px' }}>
@@ -151,7 +154,7 @@ export default function Home() {
           {/* --- 7. PROOF & CREDIBILITY --- */}
           <h2 style={{ color: '#fff', fontSize: '2.2rem', marginTop: '80px', marginBottom: '30px' }}>Proven, Stress-Tested Framework.</h2>
           <p style={{ marginBottom: '25px' }}>This isn&apos;t theoretical. Our strategies are built on custom-designed Monte Carlo analysis, utilizing 30 years of real historical market data.</p>
-          <p style={{ marginBottom: '40px' }}>Over the last 25 years, our firm has successfully guided over 200 clients, with the average client effectively doubling their net spendable retirement income.</p>
+          <p style={{ marginBottom: '40px' }}>Over the last 25 years, our firm has guided hundreds of clients through custom-designed strategies intended to maximize net spendable retirement income beyond traditional paths.</p>
 
           {/* --- 8. OBJECTION HANDLING --- */}
           <div style={{ background: 'rgba(255,255,255,0.03)', padding: '40px', borderRadius: '15px', margin: '60px 0' }}>
@@ -229,9 +232,24 @@ export default function Home() {
 
         </section>
 
-        <footer style={{ textAlign: 'center', opacity: 0.5, fontSize: '0.8rem', paddingTop: '100px' }}>
-          <p>© 2026 THE LIFT METHOD. PRIVATE ASSET MANAGEMENT STRATEGIES.</p>
-          <p style={{ marginTop: '10px' }}>Disclaimer: Indexed Universal Life is a financial product with specific rules and costs. Results may vary.</p>
+        <footer style={{ textAlign: 'center', opacity: 0.6, fontSize: '0.8rem', padding: '100px 20px 60px 20px', maxWidth: '850px', margin: '0 auto', lineHeight: '1.6' }}>
+          <div style={{ marginBottom: '20px' }}>
+            <a href="https://wealthvids.com/privacy_policy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-gold)', textDecoration: 'none', borderBottom: '1px solid rgba(212, 175, 55, 0.3)' }}>Privacy Policy</a>
+          </div>
+          
+          <p style={{ fontWeight: 600, color: '#fff', marginBottom: '15px' }}>2026 The LIFT Method | wealthvids.com | AFI Group</p>
+          
+          <div style={{ marginBottom: '25px', color: '#999' }}>
+            <p style={{ marginBottom: '12px' }}>
+              <strong>Financial Disclaimer:</strong> The LIFT Method is a financial strategy, not a specific product recommendation. All financial strategies and investments involve risk, including the loss of principal. Indexed Universal Life insurance policies contain fees, expenses, and surrender charges that may impact cash value. Historical market performance is not indicative of future results. No financial promises or guarantees are being made. Consult with a licensed financial professional and tax advisor to evaluate your specific situation.
+            </p>
+          </div>
+          
+          <div style={{ color: '#777', borderTop: '1px solid rgba(212, 175, 55, 0.1)', paddingTop: '20px', fontSize: '0.75rem' }}>
+            <p>
+              This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+            </p>
+          </div>
         </footer>
       </div>
     </main>
